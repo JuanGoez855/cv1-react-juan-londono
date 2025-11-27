@@ -1,15 +1,21 @@
 # CV React - Juan Londoño
 
-Proyecto desarrollado con **React + Vite** para crear una hoja de vida digital con componentes como Cabecera, Educación, Experiencia, Habilidades y Footer.
+Proyecto: Hoja de vida dinámica hecha con React + Vite.
 
----
+## Captura de pantalla
+![Vista previa](./public/Captura.PNG)
 
-![Vista previa del proyecto](./public/Captura.PNG)
+### Sección adicional del proyecto
+![Segunda captura](./public/Captura2.PNG)
 
----
-
-## Cómo ejecutar el proyecto
-
-### 1. Clonar el repositorio
+## Cómo ejecutar
+1. Clonar:
 ```bash
-git clone https://github.com/JuanGoez855/cv1-react-juan-londono.git
+git clone https://github.com/JuanGoez855/cv-react-juan-londono.git
+
+## Instrucciones para ejecutar el proyecto
+
+1. Instalar dependencias:
+   ```bash
+   npm install
+   npm run dev
