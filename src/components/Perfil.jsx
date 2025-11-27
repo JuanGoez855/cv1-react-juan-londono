@@ -1,9 +1,11 @@
-export default function Perfil() {
+// src/components/Perfil.jsx
+import React from "react";
+
+export default function Perfil({ resumen }) {
   return (
     <section>
-      <h3>Perfil</h3>
-      <h4>Soy un aprendiz comprometido del SENA con interés en el desarrollo web y la programación. Me caracterizo por mi disposición para aprender, mi responsabilidad y mi capacidad para trabajar en equipo. Busco seguir 
-        fortaleciendo mis habilidades técnicas mientras aporto soluciones prácticas en cada proyecto.</h4>
+      <h2>Perfil</h2>
+      <p>{resumen}</p>
     </section>
   );
 }
