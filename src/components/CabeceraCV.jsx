@@ -1,4 +1,5 @@
 // src/components/CabeceraCV.jsx
+
 import React from "react";
 
 export default function CabeceraCV({ nombre, cargo, ciudad, contacto, email }) {
