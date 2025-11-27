@@ -1,11 +1,13 @@
-export default function CabeceraCV() {
+// src/components/CabeceraCV.jsx
+import React from "react";
+
+export default function CabeceraCV({ nombre, cargo, ciudad, contacto, email }) {
   return (
     <header>
-      <h1>Juan David Londoño Goez</h1>
-      <h2>Tecnólogo en formación en Desarrollo de Software</h2>
-      <h2>Medellin</h2>
-      <h2>+57 313 508 9521</h2>
-      <h2>juangoezdj@gmail.com</h2>
+      <h1>{nombre}</h1>
+      <h2>{cargo}</h2>
+      <p>{ciudad}</p>
+      <p>{contacto} • {email}</p>
     </header>
-  )
+  );
 }
