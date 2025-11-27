@@ -1,5 +1,5 @@
 // src/components/CabeceraCV.jsx
-
+// Props desestructurados correctamente.
 import React from "react";
 
 export default function CabeceraCV({ nombre, cargo, ciudad, contacto, email }) {
