@@ -4,7 +4,7 @@ import Educacion from "./components/Educacion";
 import Experiencia from "./components/Experiencia";
 import StackTecnologias from "./components/StackTecnologias";
 
-// Importar todos los datos
+// Importar todos los datos.
 import {
   datosPersonales,
   perfil,
