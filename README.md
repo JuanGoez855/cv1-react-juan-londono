@@ -52,3 +52,10 @@ export default function CabeceraCV({ nombre, cargo, ciudad, contacto, email }) {
     </header>
   );
 }
+
+## Eventos y estado (uso de useState y props)
+
+- `App.jsx` mantiene el estado de la lista de tecnologías con `useState`.
+- `FormularioTecnologia.jsx` es un formulario controlado que llama a la función `agregarTecnologia(nombre, tipo)` pasada desde `App`.
+- `ToggleHabilidades.jsx` controla la visibilidad del componente `StackTecnologias` con un booleano pasado como prop (`mostrar`).
+- `StackTecnologias.jsx` recibe la lista de tecnologías por props y las renderiza dinámicamente.
