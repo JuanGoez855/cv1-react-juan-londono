@@ -14,19 +14,20 @@ import {
   experiencias,
   estudios,
   tecnologiasIniciales
-} from "./data.js";
+} from "./data/cvData"; 
 
 export default function App() {
-  const [tecnologias, setTecnologias] = useState(tecnologiasIniciales);
+  
+  const [tecnologias, setTecnologias] = useState(tecnologiasIniciales || []);
 
-
+  
   const [mostrarHabilidades, setMostrarHabilidades] = useState(true);
 
  
   const agregarTecnologia = (nuevoNombre, nuevoTipo) => {
     if (!nuevoNombre || !nuevoNombre.trim()) return;
     const nuevo = {
-      id: Date.now(), 
+      id: Date.now(),
       nombre: nuevoNombre.trim(),
       tipo: nuevoTipo || "herramientas"
     };
@@ -34,25 +35,21 @@ export default function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" style={{ padding: 18 }}>
       <CabeceraCV {...datosPersonales} />
       <Perfil resumen={perfil.resumen} />
 
       <Experiencia lista={experiencias} />
       <Educacion lista={estudios} />
 
-      {/* Toggle para mostrar/ocultar Habilidades */}
       <ToggleHabilidades
         mostrar={mostrarHabilidades}
         onToggle={() => setMostrarHabilidades(v => !v)}
       />
 
-      {/* Formulario para agregar tecnologías */}
       <FormularioTecnologia agregarTecnologia={agregarTecnologia} />
 
-      {/* Stack renderizado dinámicamente desde estado */}
-      <StackTecnologias tecnologias={tecnologias} />
+      {mostrarHabilidades && <StackTecnologias tecnologias={tecnologias} />}
     </div>
   );
 }
-
